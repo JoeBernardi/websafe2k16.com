@@ -1,0 +1,163 @@
+/*
+Theme Name: Websafe 2k16
+Description: Web Safe project NYC 2016
+Author: Your Joe B
+Author URI: http://websafe2k16.com
+Template: websafe
+Version: 0.1.0
+*/
+html {height:100%} 
+body {height:100%}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+}
+
+#fixed-header {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	z-index: 999;
+}
+
+#fixed-header #header-links {
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    position: absolute;
+    text-align: center;
+}
+
+
+#fixed-header #header-links a {
+	color: #fff;
+	margin: 10px;
+	text-shadow: 2px 2px 2px #000;
+	display: inline-block;
+}
+
+#fixed-header #header-links a:hover {
+	opacity: .75;
+}
+
+#fixed-header #header-links #about-link:after{
+	content: "About";
+}
+#fixed-header #header-links #contributors-link:after{
+	content: "Contributors";
+}
+
+#fixed-header #header-links #live-link:after{
+	content: "Live";
+}
+#fixed-header #header-links #home-link:after{
+	content: "Home";
+}
+.color-box {
+	float:left;
+	width: 25%;
+	display: block;
+	height: 0;
+	padding-bottom: 25%;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+}
+
+a.color-box:hover {
+	background-image: url('images/transparency.png');
+}
+
+.color-box .box-text {
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+}
+
+#post-container {
+	min-height: 100%;
+}
+
+#post-container #actual-post {
+	font-size: 24px;
+	line-height: 32px;
+	padding: 5% 10%;
+}
+
+#post-container #actual-post #post-content div,
+#post-container #actual-post #post-content p {
+	margin-bottom: 32px;
+}
+
+#post-container #actual-post #post-content i,
+#post-container #actual-post #post-content em
+ {
+	font-style: italic;
+}
+
+#post-container #actual-post a {
+	color: inherit;
+}
+
+#post-container #actual-post a:hover {
+	opacity: .75;
+}
+
+#cool-square .square-col {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+#post-container #actual-post div#cool-square {
+	margin-bottom: 20px;
+}
+
+#cool-square .square-col:last-of-type {
+	margin: 0;
+}
+
+#post-person {
+	font-style: italic;
+	font-size: 75%;
+}
+
+#cool-dash {
+	margin-bottom: 10px;
+}
+
+.ascii { 
+	font-family: courier;
+	word-wrap: normal;
+	display: inline-block;
+}
+
+@media (max-width: 600px) {  
+	#fixed-header #header-links #about-link:after{
+		content: "?";
+	}
+	#fixed-header #header-links #contributors-link:after{
+		content: "#";
+	}
+	#fixed-header #header-links #home-link:after{
+		content: "⌂";
+	}
+	.color-box {
+		font-size: 14px;
+	}
+	#post-container #actual-post {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	@media (max-width: 400px) {
+		.color-box {
+			font-size: 12px;
+		}
+		#post-container #actual-post {
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+}

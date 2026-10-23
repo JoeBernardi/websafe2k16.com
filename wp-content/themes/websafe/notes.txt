@@ -1,0 +1,10 @@
+PLUGINS
+=============
+	- ADVANCED CUSTOM FIELDS
+	- Custom Permalinks
+
+FIELDS
+=============
+	- hex code
+	- author name/handle
+	- author link
